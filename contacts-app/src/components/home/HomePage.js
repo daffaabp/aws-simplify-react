@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 
 function HomePage() {
@@ -14,7 +15,9 @@ function HomePage() {
             <br /> <br />
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque, quam, sint velit similique itaque quo ut nihil a aspernatur quis corporis sequi maiores ipsum nam debitis ipsa consectetur. Consequatur veniam illum vero tenetur soluta, nesciunt tempore ea culpa fuga quas dolore reprehenderit voluptas, quidem dolor eaque quibusdam, itaque laboriosam.
           </p>
-          <Button variant="outline-primary">Get Started &gt;&gt;</Button>
+          <Link to={{ pathname: '/contacts' }}>
+            <Button variant="outline-primary">View Contacts &gt;&gt;</Button>
+          </Link>
         </Col>
       </Row>
     </Container>
